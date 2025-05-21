@@ -25,6 +25,7 @@ Run the program using the `srb` or `simple-rust-backup` executable, specifying t
 - `-s`, `--source_dir` : Source directory to backup
 - `-t`, `--target_dir` : Target directory where backup will be stored
 - `-h`, `--help`       : Show help message and exit
+- `--delete`           : Delete orphaned files in the target dir that don't exist in the source dir
 
 ### Examples
 
@@ -32,6 +33,6 @@ Run the program using the `srb` or `simple-rust-backup` executable, specifying t
     srb -s /home/user/documents -t /mnt/backup/documents
 
     # Windows
-    srb -s C:\Users\Username\Documents -t D:\Backup\Documents
+    srb -s C:\Users\Username\Documents -t D:\Backup\Documents --delete
 
 ---
